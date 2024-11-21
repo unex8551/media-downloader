@@ -1,0 +1,63 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}Descargar videos de Instagram{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'styles/instagram_mp4.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Descargar videos de Instagram</h1>
+  <p>Descargue y guarde videos de Instagram en formato MP4.</p>
+
+  <form method="POST">
+    {% csrf_token %}
+    <div class="input-group">
+      {{ form.as_p }}
+      <button>Descargar</button>
+    </div>
+  </form>
+  {% if error %}
+  <h2>{{ error }}</h2>
+  {% endif %}
+</div>
+
+{% if download_links %}
+<div class="downloads">
+  <h3>Videos disponibles para descargar:</h3>
+  <ul>
+    {% for link in download_links %}
+    <li><a href="{{ link.url }}" download>Video {{ forloop.counter }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="features-section">
+  <div class="features">
+    <div class="feature-box">
+      <h3>Descargas ilimitadas</h3>
+      <p>Disfruta de todas las descargas que necesites sin límites.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Sin marca de agua</h3>
+      <p>Guarda tus videos favoritos sin ningún tipo de marca.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Formato MP4</h3>
+      <p>Obtén la mejor calidad de los videos en formato MP4.</p>
+    </div>
+  </div>
+  
+  <div class="guide-section">
+    <h3>Cómo descargar videos de Instagram en MP4</h3>
+    <ol>
+      <li>Copia el enlace del video de Instagram que deseas convertir.</li>
+      <li>Pega el enlace en el campo superior y haz clic en "Descargar".</li>
+      <li>El archivo MP4 comenzará a descargarse automáticamente.</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}

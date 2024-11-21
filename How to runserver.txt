@@ -1,0 +1,5 @@
+Django
+python manage.py runserver
+
+Uvicorn
+uvicorn mysite.asgi:app --host 127.0.0.1 --port 8000

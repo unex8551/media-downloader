@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    width: 100vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de descarga */
+button {
+    padding: 0 25px;
+    background-color: #e1306c;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    height: 80%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #bc2a8d;
+}
+
+/* Mensaje de error */
+h2 {
+    color: #ffd700;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Seccion de descargas */
+.downloads {
+    background-color: #ffffff;
+    border: 2px solid #e1306c;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.downloads h3 {
+    color: #e1306c;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.downloads ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.downloads li {
+    background-color: #e1306c;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.downloads li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.downloads li:hover {
+    background-color: #bc2a8d;
+}
+
+.downloads li a:hover {
+    color: white;
+}
+
+/* Características de la aplicación */
+.features-section {
+    background-color: #fafafa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.feature-box h3 {
+    color: #e1306c;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Guía para el usuario */
+.guide-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.guide-section h3 {
+    color: #e1306c;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.guide-section ol {
+    text-align: left;
+    font-size: 16px;
+}
+
+.guide-section li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input {
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        border-radius: 25px;
+        height: auto;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}

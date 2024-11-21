@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: linear-gradient(135deg, #0066cc, #00c9a7);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    width: 100vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Boton de descarga */
+button {
+    padding: 0 25px;
+    background-color: #004a8f;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    height: 80%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Mensaje de error */
+h2 {
+    color: #ffb3b3;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Caracteristicas de la aplicacion */
+.features-section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.feature-box h3 {
+    color: #004a8f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Guia para el usuario */
+.guide-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.guide-section h3 {
+    color: #004a8f;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.guide-section ol {
+    text-align: left;
+    font-size: 16px;
+}
+
+.guide-section li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input {
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        border-radius: 25px;
+        height: auto;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}

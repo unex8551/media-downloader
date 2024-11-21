@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Título de Página{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'styles/base.css' %}">
+  {% block styles %}{% endblock %}
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="{% url 'index' %}">Inicio</a></li>
+      <li><a href="{% url 'tiktok-MP3-Downloader' %}">TikTok MP3</a></li>
+      <li><a href="{% url 'instagram-MP4-Downloader' %}">Instagram MP4</a></li>
+      <li><a href="{% url 'facebook-MP4-Downloader' %}">Facebook MP4</a></li>
+    </ul>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+</html>
